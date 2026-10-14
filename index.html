@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guess My Number!</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+	<div class="holderDelScore">
+		<div class="scoreBox">
+			<div id="highScore" class="score">Highscore : <g id="highScoreDisplay">0</g></div>
+			<div id="score" class="score">Score : <a id="scoreNumber">100</a></div>
+		</div>
+		<div id="delBtn" class="delBtn">X</div>
+	</div>
+
+
+		<div class="rules">
+			<p>Guess the Number between <g>1 - 100</g><br> each wrong guess lowers the <g>score</g> by <g>5</g><br>reaching <g>0</g> is <g>Game over</g></p>
+	</div>
+		
+	</header>
+
+	<div>
+		<h1 id="gameTag">Guess My Number !</h1>
+	</div>
+
+
+		<button id="secretNumber" class="secretNumber">?</button>
+
+	<div class="displayNumHolder">
+		
+	<div class="guessHolder">
+		<input id="guessInput" class="guessInput" type="number"></input>
+		<button id="submit" class="submit">SUBMIT</button>
+	</div>
+
+	<div class="guessHolder">
+		<button id="higherlower"class="higherlower">Higher or Lower</button>
+			<a id="lastGuessNum" class="lastGuessNum">...</a>
+	</div>
+		
+	</div>
+
+</body>
+</html>
